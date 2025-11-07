@@ -1,0 +1,82 @@
+.text-center {
+  text-align: center;
+}
+
+body {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  gap: 10px;
+}
+
+/* Input styling */
+input {
+  width: 220px;
+  height: 40px;
+  color: white;
+  text-align: right;
+  font-size: 20px;
+  background-color: rgba(156, 154, 154, 0.9);
+  margin-bottom: 10px;
+  border: 2px solid #999; /* visible border */
+  outline: none;
+  border-radius: 6px;
+  padding-right: 10px;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+/* Focus glow effect */
+input:hover,
+input:focus {
+  border-color: rgb(234, 115, 234);
+  box-shadow: 0 0 8px 3px rgb(234, 115, 234);
+}
+
+/* Button styles */
+.button {
+  text-align: center;
+  margin-right: 5px;
+  width: 50px;
+  font-size: 25px;
+  height: 50px;
+  border-radius: 40%;
+  color: white;
+  background: radial-gradient(gray, rgb(95, 93, 93), rgb(67, 66, 66));
+  box-shadow: -1px -1px 4px 1px rgba(136, 101, 64, 0.986),
+    1px -3px 2px rgb(234, 115, 234);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+/* Active and pressed buttons */
+.button:active,
+.active {
+  transform: scale(0.95);
+  background: radial-gradient(rgb(200, 200, 200), rgb(120, 120, 120));
+}
+
+.green {
+  color: #55a123;
+}
+
+.red {
+  color: tomato;
+}
+
+.container :last-child :last-child {
+  width: 98px;
+  border-radius: 15%;
+  font-size: 30px;
+  font-weight: 900;
+}
